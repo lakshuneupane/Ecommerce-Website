@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/7301768d77.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Ecommerce Project</title>
+</head>
+
+<body>
+    <section id="header">
+        <!-- <a href="#"><img src="" class="logo" alt="logo"></a> -->
+        <h3 class="title">ODIN SHOES</h3>
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a class="active" href="shop.html">Shop</a></li>
+                <li><a href="">About Us</a></li>
+                <li><a href="">Contact</a></li>
+                <li><a href=""><i class="fa-solid fa-cart-shopping"></i></a></li>
+            </ul>
+        </div>
+    </section>
+    <section id="prodetails" class="section-p1">
+        <div class="single-pro-image">
+            <img src="img/product/2.png" width="100%" id="main" alt="pic">
+            <div class="small-img">
+                <div class="small-img-col">
+                    <img src="img/product/4.png" width="100%" class="small-img-1" alt="">
+                </div>
+                <div class="small-img-col">
+                    <img src="img/product/2.png" width="100%" class="small-img-1" alt="">
+                </div>
+                <div class="small-img-col">
+                    <img src="img/product/5.png" width="100%" class="small-img-1" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="single-pro-detail">
+            <h4>Adidas Sneaker</h4>
+            <h2>Rs, 3500</h2>
+            <select>
+                <option>Size A.</option>
+                <option>6</option>
+                <option>7</option>
+                <option>8</option>
+            </select>
+            <input type="number" value="1">
+            <button class="normal">Add To Cart</button>
+            <h4>Product Details</h4>
+            <span>Product details Product details Product details Product details Product details Product details Product details Product details Product detailsv Product details Product details Product details Product details Product details Product details Product details Product details Product details Product details Product details Product detailsv Product details Product details Product details Product details Product details Product details Product details Product details Product details Product details Product detailsv Product details Product details Product details Product details Product details Product details Product details Product details Product details Product details Product detailsv Product details Product details Product details</span>
+        </div>
+    </section>
+    <section id="new" class="section-m1">
+        <h1>Featured Products</h1>
+        <p>Get the latest design shoes</p>
+        <div class="pro-container">
+            <div class="pro">
+                <img src="img/product/1.png" alt="">
+                <div class="des">
+                    <span>Nike</span>
+                    <h3>Nike sneaker</h3>
+                    <h4>Rs 3000</h4>
+                </div>
+                <div class="cart">
+                    <a href="#"><i class="fa-solid fa-cart-arrow-down cart"></i></a>
+                </div>
+            </div>
+            <div class="pro">
+                <img src="img/product/1.png" alt="">
+                <div class="des">
+                    <span>Adidas</span>
+                    <h3> Adidas sneaker</h3>
+                    <h4>Rs 3500</h4>
+                </div>
+                <div class="cart">
+                    <a href="#"><i class="fa-solid fa-cart-arrow-down cart"></i></a>
+                </div>
+            </div>
+            <div class="pro">
+                <img src="img/product/1.png" alt="">
+                <div class="des">
+                    <span>Gold Star</span>
+                    <h3>Gold Star sneaker</h3>
+                    <h4>Rs 3000</h4>
+                </div>
+                <div class="cart">
+                    <a href="#"><i class="fa-solid fa-cart-arrow-down cart"></i></a>
+                </div>
+            </div>
+            <div class="pro">
+                <img src="img/product/1.png" alt="">
+                <div class="des">
+                    <span>Nike</span>
+                    <h3>White Nike sneaker</h3>
+                    <h4>Rs 3000</h4>
+                </div>
+                <div class="cart">
+                    <a href="#"><i class="fa-solid fa-cart-arrow-down cart"></i></a>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <section id="newsletter" class="section-m1">
+        <div class="newstext">
+            <h2>Sign Up for newsletter</h2>
+            <h4>Get Email updates about our latest shop and <span>special offer</span></h4>
+        </div>
+        <div class="form">
+            <input type="text" placeholder="Your email Address">
+            <button class="btn">Sign Up</button>
+        </div>
+    </section>
+    <footer class="section-m1">
+        <div class="col">
+            <img class="logo" src="logo.png" alt="logo">
+            <h4>Contact</h4>
+            <p><strong>Address:</strong> Gwarko, Lalitpur</p>
+            <p><strong>Phone:</strong> 9860300580, 01343424</p>
+            <p><strong>Hour:</strong> 6am to 8pm</p>
+        </div>
+        <div class="col">
+            <h4>About</h4>
+            <a href="#">About Us</a>
+            <a href="#">Delivery Information</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Contact Us</a>
+        </div>
+        <div class="col">
+            <h4>My Account</h4>
+            <a href="#">Sign Up</a>
+            <a href="#">View Cart</a>
+            <a href="#">My Wishlist</a>
+            <a href="#">Track My Order</a>
+            <a href="#">Help</a>
+        </div>
+    </footer>
+    <script>
+        var main = document.getElementById("main");
+        var smallimg = document.getElementsByClassName("small-img-1");
+
+        smallimg[0].onclick = function() {
+            main.src = smallimg[0].src;
+        }
+        smallimg[1].onclick = function() {
+            main.src = smallimg[1].src;
+        }
+        smallimg[2].onclick = function() {
+            main.src = smallimg[2].src;
+        }
+        smallimg[3].onclick = function() {
+            main.src = smallimg[3].src;
+        }
+    </script>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
