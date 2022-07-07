@@ -143,18 +143,24 @@ p {
     color: rgb(82, 8, 8);
 }
 
+#shoe a {
+    text-decoration: none;
+}
+
 #shoe button {
-    background-color: rgb(175, 133, 61);
-    color: rgb(58, 111, 23);
+    background-color: rgb(220, 184, 39);
+    color: rgb(214, 237, 151);
     border-radius: 10px;
-    padding: 4px;
+    border: none;
+    padding: 10px;
     box-shadow: 0 5px 15px rgb(187, 73, 73);
     transition: transform 0.3s ease;
     cursor: pointer;
 }
 
 #shoe button:hover {
-    background-color: rgb(86, 202, 163);
+    background-color: rgb(234, 234, 126);
+    color: rgb(246, 82, 82);
 }
 
 #shoe button::after,
@@ -653,4 +659,52 @@ footer a:hover {
 
 #prodetails .single-pro-detail span {
     line-height: 25px;
+}
+
+#about {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+#about img {
+    height: 450px;
+    width: 500px;
+}
+
+#about h2 {
+    text-align: center;
+    font-style: italic;
+}
+
+#about p {
+    text-align: justify;
+    margin-left: 20px;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 20px;
+    font-size: 20px;
+}
+
+#marq {
+    height: 40px;
+    color: greenyellow;
+    margin-bottom: 20px;
+}
+
+#marq .marque {
+    background-image: url(img/banner/4.png);
+}
+
+#marq .marque h2 {
+    font-size: 20px;
+}
+
+#marq span {
+    color: azure;
+}
+
+#marq marquee {
+    padding: 10px;
+    font-size: 20px;
 }
